@@ -1,0 +1,162 @@
+html {
+    height: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/*header*/
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: bolder;
+  }
+
+.hero-text {
+    font-size: 40px;
+    text-align: center;
+    color: #fcfcfce0;
+    padding: 16%;
+
+  }
+
+  .title{
+    font-size: 90px;
+  }
+
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: rgb(2, 2, 2);
+    background-color: #fcfcfce0;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+
+  nav {
+    display: flex;
+    font-weight: lighter;
+    padding: 20px;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: blueviolet;
+
+}
+
+li{
+    display: table-row;
+    
+}
+
+li a{
+    text-decoration:  none;
+    color: rgb(194, 20, 20);
+    line-height: 2.5em; 
+   
+
+}
+
+
+
+  /* main content */
+
+.section{
+    margin: 90px;
+    display: flex;
+    margin-bottom: 15%;
+}
+
+.s1{
+
+    width: 90vh;
+    float: left;
+    height: auto;
+    
+
+
+
+}
+
+.s2{
+
+    width: 90vh;
+    height: auto;
+    float: right;
+    margin-left: 30px;
+
+}
+
+.titles{
+    font-size: 45px;
+}
+
+ul, .text{
+  font-size: 20px;
+}
+
+ul{
+  font-weight: bold;
+  color: #000000e0;
+}
+
+footer{
+  background-color: #1b1616c7;
+  color: rgba(255, 255, 255, 0.541);
+  padding: 30px;
+  text-align: center;
+ 
+}
+
+
+
+@media (max-width: 625px) and (min-width: 200px) {
+  .section{
+    flex-direction: column;
+
+
+  }
+}
+
+
+@media (max-width: 625px) and (min-width: 200px) {
+  .s1, .s2{
+    width: 100%;
+    margin-left: -30px;
+  
+  }
+}
+
+
+@media (max-width: 625px) and (min-width: 200px) {
+  nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: white;
+  }
+}
